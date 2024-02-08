@@ -5,12 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 
 <body>
     <main>
-        <section class="userInput">
+        <section class="certificate">
+            <img src="assets/certificate_border.png" alt="" class="top left">
+            <img src="assets/certificate_border.png" alt="" class="bottom left">
+            <section class="certificateInfo" id="certificateInfo">
+                <span id="nameOutput" class="visible">Test Name</span>
+                <span id="info">Test Info</span>
+            </section>
+            <img src="assets/certificate_border.png" alt="" class="top right">
+            <img src="assets/certificate_border.png" alt="" class="bottom right">
+        </section>
+        <section class="userInputSpot">
             <form action="" id="userInput">
                 <input type="text" name="userName" id="userName">
                 <select name="certType" id="certType" class="certType">
@@ -20,9 +31,6 @@
                 </select>
                 <input type="submit" value="Generate">
             </form>
-        </section>
-        <section class="certificate">
-
         </section>
     </main>
 </body>

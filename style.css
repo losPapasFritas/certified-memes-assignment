@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-flow: row;
+}
+
+.certificate {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    width: 75vw;
+    height: 98.2vh;
+    padding: 1em;
+    border: 10px blue solid;
+}
+
+.userInputSpot {
+    width: 25vw;
+    height: 98.2vh;
+    padding: 1em;
+    background-color: lightgray;
+}
+
+img{
+    max-width: 100%;
+    width: 15vw;
+    justify-content: space-between;
+}
+
+.bottom{
+    scale: -1;
+}
+
+.bottom.left, .top.right{
+    transform: scaleX(-1);
+}
