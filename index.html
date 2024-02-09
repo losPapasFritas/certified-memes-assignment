@@ -13,25 +13,62 @@
     <main>
         <section class="certificate">
             <!-- maybe change it to a blank box and add the image using css -->
-            <img src="assets/certificate_border.png" alt="" class="top left">
-            <img src="assets/certificate_border.png" alt="" class="bottom left">
-            <section class="certificateInfo" id="certificateInfo">
-                <span id="nameOutput" class="visible">Test Name</span>
-                <span id="info">Test Info</span>
+            <section class="row">
+                <img src="assets/certificate_border.png" alt="" class="top left">
+                <section class="certTitle">
+                    <p class="center large">Certificate Of</p>
+                    <!-- <p class="unknown center large  hidden">um idk lol</p> -->
+                    <p class="center large" id="certTitle">Certification</p>
+                    <!-- <p class="goofy center large hidden">being silly goofy</p> -->
+                </section>
+                <img src="assets/certificate_border.png" alt="" class="top right">
             </section>
-            <img src="assets/certificate_border.png" alt="" class="top right">
-            <img src="assets/certificate_border.png" alt="" class="bottom right">
+            <section class="certificateInfo row" id="certificateInfo">
+                <span id="nameOutput" class="center large">Your Name Here</span>
+            </section>
+            <section class="row">
+                <img src="assets/certificate_border.png" alt="" class="bottom left">
+                <section class="bottomInfo">
+                    <section class="description">
+                        <!-- <p class="unknown  hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id arcu
+                            quis enim sollicitudin tincidunt in a arcu. Morbi facilisis ultrices neque eu feugiat.</p> -->
+                        <p class="center" id="certDesc">This certificate certifies that the recipient is certified in
+                            certifying others.</p>
+                        <!-- <p class="goofy hidden">This certifies that the recipient is indeed a silly goofy guy, and does
+                            everything for silly goofy reasons.\n:3</p> -->
+                    </section>
+                    <section class="altInfo">
+                        <section class="issuer">
+                            <!-- <p class="unknown name center  hidden">Peppino</p> -->
+                            <p class="name center visible" id="certIssuer">BT-7274</p>
+                            <!-- <p class="goofy name center hidden">Grain</p> -->
+                            <!-- <p class="title unknown center  hidden">Ceo Of Lorem</p> -->
+                            <p class="title center visible" id="certIssuerTitle">Robot</p>
+                            <!-- <p class="title goofy center hidden">Janitor</p> -->
+                        </section>
+                        <section class="badge">
+
+                        </section>
+                        <section class="date">
+                            <p class="date center" id="dateInput">Friday, Jul 2, 2020</p>
+                            <p class="dateTitle center">Date</p>
+                        </section>
+                    </section>
+                </section>
+                <img src="assets/certificate_border.png" alt="" class="bottom right">
+            </section>
         </section>
         <section class="userInputSpot">
             <form action="" id="userInput">
                 <input type="text" name="userName" id="userName">
                 <select name="certType" id="certType" class="certType">
-                    <option value="unknown">Certificate Option A</option>
-                    <option value="certification">Certificate Option B</option>
-                    <option value="goofy">Certificate Option C</option>
+                    <option value="um idk lol">Certificate Option A</option>
+                    <option value="Certification">Certificate Option B</option>
+                    <option value="being silly goofy">Certificate Option C</option>
                 </select>
                 <input type="submit" value="Generate">
             </form>
+            <input type="button" value="Print" id="print">
         </section>
     </main>
 </body>

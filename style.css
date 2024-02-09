@@ -1,16 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 main {
     display: flex;
-    flex-flow: row;
+    flex-flow: column row;
 }
 
 .certificate {
     display: flex;
     flex-flow: column wrap;
     align-items: flex-end;
+    flex-grow: 1;
     width: 75vw;
     height: 98.2vh;
     padding: 1em;
@@ -24,16 +30,83 @@ main {
     background-color: lightgray;
 }
 
-img{
+img {
     max-width: 100%;
     width: 15vw;
     justify-content: space-between;
 }
 
-.bottom{
+.bottom {
     scale: -1;
 }
 
-.bottom.left, .top.right{
+.bottom.left,
+.top.right {
     transform: scaleX(-1);
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.certificateInfo {
+    justify-content: center;
+    flex-flow: column;
+    flex-grow: 1;
+}
+
+.description {
+    display: flex;
+    width: 75%;
+    align-self: center;
+}
+
+.large {
+    font-size: 70px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.bottomInfo {
+    display: flex;
+    flex-flow: column;
+}
+
+.altInfo {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.center {
+    text-align: center;
+}
+.date, .name{
+    margin-bottom: 0px;
+}
+.dateTitle, .title{
+    border-top: 1px black solid;
+    margin-top: 0px;
+}
+
+/*-debug so i dont mess up-------------------------------------------------------------- */
+#print{
+    display: none;
+}
+/*-debug so i dont mess up-------------------------------------------------------------- */
+
+@media print{
+    .userInputSpot{
+        display: none;
+    }
 }
