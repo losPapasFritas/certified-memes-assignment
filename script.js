@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function changeCert(value){
         let desc = document.getElementById(`certDesc`);
         let name = document.getElementById(`certIssuer`);
-        let job = document.getElementById(`certIssuer`);
+        let job = document.getElementById(`certIssuerTitle`);
         switch(value){
           case `um idk lol`:
             desc.innerText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id arcu

@@ -99,11 +99,7 @@ img {
     margin-top: 0px;
 }
 
-/*-debug so i dont mess up-------------------------------------------------------------- */
-#print{
-    display: none;
-}
-/*-debug so i dont mess up-------------------------------------------------------------- */
+
 
 @media print{
     .userInputSpot{
