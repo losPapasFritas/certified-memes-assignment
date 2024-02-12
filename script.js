@@ -35,24 +35,35 @@ document.addEventListener("DOMContentLoaded", function () {
         let desc = document.getElementById(`certDesc`);
         let name = document.getElementById(`certIssuer`);
         let job = document.getElementById(`certIssuerTitle`);
+        let potat = document.getElementById(`potato-ribbon`);
+        let bread = document.getElementById(`bread-ribbon`);
+        bread.classList = ``;
+        potat.classList = ``
         switch(value){
           case `um idk lol`:
             desc.innerText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id arcu
             quis enim sollicitudin tincidunt in a arcu. Morbi facilisis ultrices neque eu feugiat.`
             name.innerText = `Peppino`;
             job.innerText = `Ceo Of Lorem`;
+            bread.classList.add(`visible`);
+            potat.classList.add(`hidden`);
+
             break;
           case `Certification`:
             desc.innerText = `This certificate certifies that the recipient is certified in
             certifying others.`
             name.innerText = `BT-7274`;
             job.innerText = `Robot`;
+            bread.classList.add(`visible`);
+            potat.classList.add(`hidden`);
             break;
           case `being silly goofy`:
             desc.innerText = `This certifies that the recipient is indeed a silly goofy guy, and does
             everything for silly goofy reasons.\n:3`
             name.innerText = `Grain`;
             job.innerText = `Janitor`;
+            bread.classList.add(`hidden`);
+            potat.classList.add(`visible`);
             break;
         }
     };

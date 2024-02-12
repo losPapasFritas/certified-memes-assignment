@@ -32,6 +32,9 @@ main {
 
 img {
     max-width: 100%;
+}
+
+.corner{
     width: 15vw;
     justify-content: space-between;
 }
@@ -98,7 +101,15 @@ img {
     border-top: 1px black solid;
     margin-top: 0px;
 }
-
+.badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#potato-ribbon, #bread-ribbon{
+    max-width: 71%;
+    max-height: 100%;
+}
 
 
 @media print{
