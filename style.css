@@ -106,10 +106,6 @@ img {
     align-items: center;
     justify-content: center;
 }
-#potato-ribbon, #bread-ribbon{
-    max-width: 71%;
-    max-height: 100%;
-}
 
 
 @media print{
